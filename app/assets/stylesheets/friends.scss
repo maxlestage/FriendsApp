@@ -1,0 +1,30 @@
+// Place all the styles related to the friends controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+span {
+  color: gray;
+}
+
+span:hover {
+  color: red;
+}

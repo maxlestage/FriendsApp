@@ -1,0 +1,8 @@
+<h1>À propos ? </h1>
+<% if current_user %>
+  <h2>Vous êtes connecté avec l'adresse email: <span><%= @about_me %></span>, ce n'est pas vous ?</h2>
+  <h3>Vous pouvez vous déconnecter si vous le
+    souhaitez:  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-outline-danger' %></h3>
+  <% else %>
+  <h4><%= @about_anon %></h4>
+<% end %>
