@@ -9,5 +9,4 @@ class HomeController < ApplicationController
         @about_anon = "Vous n'êtes actuellement pas connecté."
       end
   end
-
 end
