@@ -119,11 +119,6 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
   #
 
-  # PUMA CONF TEST
-  config.threadsafe!
-  # get rid of NewRelic after_fork code, if you were doing this:
-  # http://support.newrelic.com/kb/troubleshooting/unicorn-no-data
-  # and get rid of config/unicorn.rb if you were using that
 
 
   config.action_mailer.smtp_settings = {
