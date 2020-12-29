@@ -74,7 +74,8 @@ Rails.application.configure do
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
   #
-  #
+
+
   # Devise mail mot de passe
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
@@ -85,8 +86,8 @@ Rails.application.configure do
     user_name: ENV["GMAIL_USERNAME"],
     password:ENV["GMAIL_PASSWORD"]
   }
-
   # Devise installed :
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-
+  config.action_mailer.delivery_method = :smtp
+  host = 'https://friendslistapp.herokuapp.com/' #replace with your own url
+  config.action_mailer.default_url_options = { host: host }
 end
