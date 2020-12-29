@@ -126,7 +126,7 @@ Rails.application.configure do
     port: 465,
     domain: "gmail.com",
     authentication: "plain",
-    enable_starttls_auto: true,
+    # enable_starttls_auto: true,
     user_name: ENV["GMAIL_USERNAME"],
     password:ENV["GMAIL_PASSWORD"]
   }
