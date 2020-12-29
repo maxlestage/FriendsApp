@@ -129,5 +129,5 @@ Rails.application.configure do
     password:ENV["GMAIL_PASSWORD"]
   }
   # doesn't have to be Heroku, but you get the idea.
-  config.action_mailer.default_url_options = { host: 'friendslistapp.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'https://friendslistapp.herokuapp.com' }
 end
